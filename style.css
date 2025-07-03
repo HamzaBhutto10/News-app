@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color : #183b56;
+    --secondary-text-color : #577592;
+    --accent-color : #2294ed;
+    --accent-color-dark : #1d69a3;
+    --padding-inline-section : 20px;
+}
+
+body{
+    color: var(--primary-text-color);
+}
+
+p{
+    color: var(--secondary-text-color);
+    line-height: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd8eb;
+    /* position: fixed; */
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.company-logo img{
+    width: 80px;
+    height: 60px;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+    height: 70px;
+}
+
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-links{
+    cursor: pointer;
+}
+
+.hover-links:hover{
+    color: var(--secondary-text-color);
+}
+
+.hover-links:active{
+    color:red;
+}
+
+.hover-links.active{
+    color: var(--accent-color);
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd8e2;
+
+}
+
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 10px;
+    background-color: rgb(241, 244, 246);
+}
+
+.cards-container{
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 360px;
+    height: 400px;
+    box-shadow: #d4ecd4;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #fff;
+    transition: ease all 3s;
+}
+
+.cards:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 8px #6f8495;
+    background-color: #f9fdff;
+}
+
+.cards-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 8px;
+    margin-right: 8px;
+}
+
+.cards-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="/news logo.png" alt="">
+            </a>
+            <div class="nav-links ">
+                <ul class="flex">
+                    <li class="nav-item hover-links" id="trading" onclick="onNavItemClick('trading')">Trading</li>
+                    <li class="nav-item hover-links" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-item hover-links" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text">
+                <button class="search-button" id="search-btn">search</button>
+            </div>
+        </div>  
+    </nav>
+
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+          
+        </div>
+    </main>
+
+    <template class="template-news-cards" id="template-news-card">
+        <div class="cards">
+            <div class="cards-header">
+                <img src="" alt="image" id="news-img">
+            </div>
+            <div class="cards-content">
+                <h3 id="news-title">This is title</h3>
+                <h6 id="news-source" class="news-source">End gudget 26/08/2023</h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, voluptatem quos fuga dicta sequi explicabo ipsam iure inventore voluptatibus doloremque quia 
+                    optio cupiditate facere laudantium hic debitis perspiciatis qui nisi?</p>
+            </div>
+        </div>
+    </template>
+</body>
+<script src="index.js"></script>
+</html>
